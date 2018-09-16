@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <title>Afspraak | Wondzorg</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/png" href="./Images/logo_wondzorg_2x.png">
+</head>
+<body>
+   <header>
+      <input id="menu" type="checkbox">
+       <div class="header">
+           <nav>
+               <ul>
+                   <li><a href="index.html">Home</a></li>
+                   <li class="border"><a href="info.html">Over ons</a></li>
+                   <li class="border"><a href="wondsoort.html">Wondtypes</a></li>
+                   <li>
+                        <a id="afspraakdonker" href="afspraak.html">Afspraak maken
+                        </a>
+                    </li>
+               </ul>
+           </nav>
+           
+           <div class="menu">
+               <label for="menu">Menu</label>
+           </div>
+           
+           <a href="index.html"><img id="logoh" src="./Images/logo_wondzorg_2x.png" alt="Logo" width="60" height="40"></a>
+       </div>
+       
+</header>
+   
+   <div class="formulier">
+    
+       <section class="form">
+           <form method="post" id="form">
+                <ul class="adres" id="formInleiding">
+                    <li id="eersteTitel">Maak een afspraak</li>
+                    <li class="formtext">
+                        <p>Met deze gegevens kan ons team specifieke en kwalitatieve zorg leveren.</p> 
+                    </li>
+                    <li class="formtext">
+                        <p>Indien u dit niet wenst in te vullen, kan u ons altijd contacteren op het mailadres <a id="maillink" href="mailto:mailadres@hotmail.com">mailadres@hotmail.com</a>.</p>
+                    </li>
+                </ul>   
+                <ul class="persoonlijk">
+                        <li class="hoofdtitelafspraak">
+                            <h3>Persoonlijke gegevens</h3>
+                        </li>
+                   
+                        <li class="inputnaam">
+                            <p>
+                                <label for="naamveld">Uw volledige naam
+                                <input type="text" id="naamveld" title="Uw naam" required></label>
+                            </p>
+                        </li>
+                  
+                    
+                    
+                        <li class="geslacht">
+                            <p>
+                                 <label for="man"><input type="radio" name="geslacht man" value="Man" id="man">Man</label>
+                                 <label for="vrouw"><input type="radio" name="geslacht vrouw" value="Vrouw" id="vrouw">Vrouw</label>
+                            </p>
+                        </li>
+                        
+                        <li class="gebTelMail">
+                            <p><label for="datum">Geboortedatum
+                            <input type="date" id="datum" title="Geboortedatum"></label></p>
+                        </li>
+                        
+                        <li class="gebTelMail">
+                            <p><label for="telnr">Telefoonnummer
+                            <input type="number" id="telnr" title="Telefoonnummer" required></label></p>
+                        </li>
+                        
+                        <li class="gebTelMail">
+                            <p><label for="email">Email 
+                            </label><input type="email" id="email" title="Email" required></p>
+                        </li>
+                    
+                </ul>
+                
+                <ul class="wondsoort">
+                    <li class="hoofdtitelafspraak">
+                        <h3>Wondsoort</h3>
+                    </li>
+                    
+                    <li class="selectwond">
+                        <label for="wondsoort">Type wond </label>
+                        <select name="Wondsoort" id="wondsoort">
+                            <option value="Select">Selecteer een wond</option>
+                            <option value="CW">Congenitaal</option>
+                            <option value="SW">Spontaan</option>
+                            <option value="PtW">Post-traumatisch</option>
+                            <option value="PcW">Post-chirurgisch</option>
+                            <option value="PiW">Post infectueus</option>
+                            <option value="OW">Oncologisch</option>
+                            <option value="OaW">Onderliggende aandoening</option>
+                            <option value="NZ">Niet zeker</option>
+                        </select>
+                    </li>
+                    
+                   <li class="extrainfo">
+                       <p><label for="omschrijving">Extra info </label><textarea name="Omschrijving" id="omschrijving" cols="30" rows="5" title="Omschrijving wonde of symptoon"></textarea></p>
+                   </li>
+                </ul>
+                
+               
+                    <ul class="adres">
+                        <li class="hoofdtitelafspraak">
+                            <h3>Adres</h3>
+                        </li>
+                        <li class="adresgegevens">
+                            <p><label for="straat">Straatnaam en huisnummer</label><input type="text" id="straat" title="Straatnaam en huisnummer" required></p>
+                        
+                        <li class="adresgegevens">
+                            <p><label for="gemeente">Gemeente </label><input type="text" id="gemeente" title="Gemeente" required></p>
+                        </li>
+                        <li class="adresgegevens">
+                            <p><label for="land">Land </label><input type="text" id="land" title="Land" required></p>
+                        </li>
+                    </ul>
+                
+                
+                
+                    <ul class="adres">
+                        <li class="hoofdtitelafspraak">
+                            <h3>Adres Huisarts</h3>
+                        </li>
+                        <li class="adresgegevens">
+                            <p><label for="straatHa">Straatnaam en huisnummer</label><input type="text" id="straatHa" title="Straatnaam en huisnummer" required></p>
+                        </li>
+                        
+                        <li class="adresgegevens">
+                            <p><label for="gemeenteHa">Gemeente </label><input type="text" id="gemeenteHa" title="Gemeente" required></p>
+                        </li>
+                        <li class="adresgegevens">
+                            <p><label for="landHa">Land </label><input type="text" id="landHa" title="Land"></p>
+                        </li>
+                    </ul>
+                
+                
+                <div class="verzenden">
+                    <input id="verzenden" type="submit">
+                </div>
+            </form>
+       </section>
+       </div>
+<footer>
+    <div class="footer">
+        <section id="footer">
+           <h3>Contactgegevens</h3>
+            
+            <p>0478 522 666 </p>
+            <p>wondzorg@gmail.com</p>
+        </section>
+        
+        <img id="logof" src="./Images/logo_wondzorg_2xfooter.png" alt="logo" width="80" height="60">
+    </div>
+</footer>
+   
+</body>
+</html>
